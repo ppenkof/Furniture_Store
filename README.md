@@ -13,7 +13,10 @@ Furniture Store is JS backEnd application
 -[x] Install vite (local development server) 'npm i -D vite'
 -[x] Setup vite
 
+## Setup REST API
 
+-[x] Initialize project and add .gitignore
+-[ ] Install and setup express 'npm i express'
 
 
 ## Bonus
