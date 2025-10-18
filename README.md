@@ -7,3 +7,15 @@ Furniture Store is JS backEnd application
 -[x] Inial folder structure
 -[x] Add client resourses and dependecies 'cd client' 'npm i'
 -[x] Add gitignore in client folder
+
+## Startup client
+
+-[x] Install vite (local development server) 'npm i -D vite'
+-[x] Setup vite
+
+
+
+
+## Bonus
+
+-[ ] Buld with vite
