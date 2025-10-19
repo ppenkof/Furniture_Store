@@ -30,9 +30,9 @@ Furniture Store is JS backEnd application
 -[x] Add user service with register method
 -[x] Install bcrypt
 -[x] Hash password on register
--[ ] Add login endpoint
--[ ] Verify login credentials
--[ ] Return token
+-[x] Add login endpoint and service
+-[x] Verify login credentials
+-[ ] Generate and return token
 
 
 
