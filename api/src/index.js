@@ -2,6 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import routes from './routes.js';
 import mongoose from 'mongoose';
+import { authMiddleware } from './middlewares/authMiddleware.js';
 
 const app = express();  
 
@@ -22,6 +23,9 @@ app.use(cors());
 
 //Add JSON body parser
 app.use(express.json());
+
+//Add auth middleware
+app.use(authMiddleware);
 
 //Add routes
 app.use(routes);
