@@ -1,12 +1,13 @@
 import express from 'express';
 import cors from 'cors';
 import routes from './routes.js';
+import mongoose from 'mongoose';
 
 const app = express();  
 
 // Setup mongoose
 try {
-    await mongoose.connect('mongodb:localhost:27017', {
+    await mongoose.connect('mongodb://localhost:27017', {
     dbName: 'furnitureDB'
     });
     console.log('Connected to database successfully.');
