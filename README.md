@@ -18,7 +18,7 @@ Furniture Store is JS backEnd application
 -[x] Initialize project and add .gitignore
 -[x] Install and setup express 'npm i express'
 -[x] Add CORS
--[x] Add Furniture contrller
+-[x] Add Furniture controller
 
 ## Authentication and Authorization
 
@@ -28,8 +28,8 @@ Furniture Store is JS backEnd application
 -[x] Add and config database 'nmp i mongoose'
 -[x] Add user model
 -[x] Add user service with register method
--[ ] Install bcrypt
--[ ] Hash password on register
+-[x] Install bcrypt
+-[x] Hash password on register
 
 
 ## Bonus
