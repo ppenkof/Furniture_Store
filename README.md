@@ -20,6 +20,11 @@ Furniture Store is JS backEnd application
 -[x] Add CORS
 -[x] Add Furniture contrller
 
+## Authentication and Authorization
+
+-[x] Create auth(user) controller
+
+
 
 ## Bonus
 
