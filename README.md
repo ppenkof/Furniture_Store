@@ -16,7 +16,8 @@ Furniture Store is JS backEnd application
 ## Setup REST API
 
 -[x] Initialize project and add .gitignore
--[ ] Install and setup express 'npm i express'
+-[x] Install and setup express 'npm i express'
+
 
 
 ## Bonus
