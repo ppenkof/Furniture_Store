@@ -27,7 +27,7 @@ Furniture Store is JS backEnd application
 -[x] Registe endpoind
 -[x] Add and config database 'nmp i mongoose'
 -[x] Add user model
--[ ] Add user service with register method
+-[x] Add user service with register method
 -[ ] Install bcrypt
 -[ ] Hash password on register
 
@@ -35,3 +35,4 @@ Furniture Store is JS backEnd application
 ## Bonus
 
 -[ ] Buld with vite
+-[ ] Refactor Service
