@@ -23,7 +23,13 @@ Furniture Store is JS backEnd application
 ## Authentication and Authorization
 
 -[x] Create auth(user) controller
-
+-[x] Add json parser
+-[x] Registe endpoind
+-[x] Add and config database 'nmp i mongoose'
+-[ ] Add user model
+-[ ] Add user service with register method
+-[ ] Install bcrypt
+-[ ] Hash password on register
 
 
 ## Bonus
