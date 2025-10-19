@@ -33,7 +33,9 @@ Furniture Store is JS backEnd application
 -[x] Add login endpoint and service
 -[x] Verify login credentials
 -[x] Generate and return token 'npm i jsonwebtoken'
-
+-[x] Auto login after register
+-[ ] Create logout 
+-[ ] Add auth middleware
 
 
 ## Bonus

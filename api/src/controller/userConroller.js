@@ -9,7 +9,7 @@ userController.post('/register', async (req, res) => {
     console.log(password);
     const result = await userService.register(email, password);
     // Todo: Return data for login
-    res.status(201).end();
+    res.status(201).json(result);
 });
 
 userController.post('/login', async (req, res) => {
@@ -18,7 +18,7 @@ userController.post('/login', async (req, res) => {
     try {
         const result = await userService.login(email, password);
         res.status(201).json(result);
-        
+
     } catch (error) {
         //Extract error message
         res.status(401).json({ message: error.message });
