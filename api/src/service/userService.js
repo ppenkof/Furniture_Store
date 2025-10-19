@@ -1,9 +1,8 @@
 import User from '../model/User.js';
 import bcrypt from 'bcrypt';
-import 'dotenv/config'
+
 import { generateAuthToken } from '../utils/tokenUtils.js';
 
-console.log(process.env.JWT_SECRET);
 
 export default {
     async register(email, password) {
@@ -18,19 +17,18 @@ export default {
     async login(email, password) {    
         const user = await User.findOne({email});
 
-        console.log( password, user.id);
-
         if(!user){
             throw new Error('Invalid email or password');
         }
 
-        const isValid = bcrypt.compare(password, user.password);
+        const isValid = await bcrypt.compare(password, user.password);
 
         if(!isValid){
             throw new Error('Invalid email or password');
         }
 
         const token = generateAuthToken(user);
+        
         return {
             _id: user.id,
             email: user.email, 
