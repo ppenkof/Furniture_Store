@@ -32,11 +32,12 @@ Furniture Store is JS backEnd application
 -[x] Hash password on register
 -[x] Add login endpoint and service
 -[x] Verify login credentials
--[ ] Generate and return token
+-[x] Generate and return token 'npm i jsonwebtoken'
 
 
 
 ## Bonus
 
+-[x] Use env variables 'npm i dotenv'
 -[ ] Buld with vite
 -[ ] Refactor Service
