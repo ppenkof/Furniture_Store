@@ -37,6 +37,13 @@ Furniture Store is JS backEnd application
 -[x] Create logout 
 -[x] Add auth middleware
 
+## Furniture endpoints
+
+-[x] Add funture model
+-[ ] Add funture service
+-[ ] Create funture ednpoint
+
+
 
 ## Bonus
 
