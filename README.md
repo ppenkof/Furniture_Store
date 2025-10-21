@@ -44,6 +44,8 @@ Furniture Store is JS backEnd application
 -[x] Create funture ednpoint
 -[x] Get all furniture
 -[x] Select only needed information for catalog
+-[x] Create details ednpoint
+
 
 
 

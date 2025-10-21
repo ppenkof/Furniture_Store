@@ -8,6 +8,9 @@ export default {
             price: true,    
         });
     },
+    getOne(furnitureId){
+        return Furnuture.findById(furnitureId);
+    },
     create(furnitureData){
         return Furnuture.create(furnitureData);
     }
