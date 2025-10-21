@@ -1,8 +1,8 @@
 import Furnuture from "../model/Furniture.js";
 
 export default {
-    getAll(){
-        return Furnuture.find().select({
+    getAll(filter){
+        return Furnuture.find(filter).select({
             description: true,
             img: true,
             price: true,    

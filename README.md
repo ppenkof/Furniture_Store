@@ -48,7 +48,7 @@ Furniture Store is JS backEnd application
 -[x] Add owner relation to furniture model
 -[x] Edit furniture endpoint
 -[x] Delete furniture endpoint
-
+-[x] Filter furniture by userId
 
 
 ## Error handling
