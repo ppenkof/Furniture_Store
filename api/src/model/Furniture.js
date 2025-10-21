@@ -1,6 +1,6 @@
-import { Scheme, model} from 'mongoose';
+import { Schema, model} from 'mongoose';
 
-const furnitureSchema = new Scheme({
+const furnitureSchema = new Schema({
     make: { 
         type: String, 
         required: [true, 'Make is required'],
@@ -27,7 +27,7 @@ const furnitureSchema = new Scheme({
         required: [true, 'Price is required'],
         min: [0, 'Price should be a positive number'],
     },
-    imgUrl: { 
+    img: { 
         type: String, 
         required: [true,'ImageUrl is required'], 
     },

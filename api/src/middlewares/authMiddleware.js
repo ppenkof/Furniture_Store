@@ -8,7 +8,7 @@ export function authMiddleware(req, res, next) {
     }
 
     try {
-        const decodedToken=jwt.verify(token, process.env.JWT_SECRET);
+        const decodedToken = jwt.verify(token, process.env.JWT_SECRET);
         req.user =  decodedToken;
         next();
     } catch (error) {
