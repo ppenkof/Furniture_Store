@@ -1,6 +1,7 @@
 import { Router } from "express";
 import userService from "../service/userService.js";
 import { get } from "mongoose";
+import { getErrorMessage } from "../utils/errorUtils.js";
 
 const userController = Router();
 
