@@ -20,6 +20,21 @@ furnitureController.get('/:furnitureId', async (req, res) => {
     const  furniture = await furnitureService.getOne(furnitureId);
     res.json(furniture);
 });
+
+furnitureController.put('/:furnitureId', async (req, res) => {
+    const furnitureId = req.params.furnitureId;
+    const furnitureData = req.body;
+    try {
+        const updatedFurniture = await furnitureService.update(furnitureId, furnitureData);
+        res.json(updatedFurniture); 
+    } catch (error) {
+        //Error handling
+        // res.status(400).json({message: error.message});
+        // return;
+        
+    }
+    
+});
     
 
 export default furnitureController;

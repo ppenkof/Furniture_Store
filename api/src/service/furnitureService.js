@@ -8,13 +8,19 @@ export default {
             price: true,    
         });
     },
+
     getOne(furnitureId){
         return Furnuture.findById(furnitureId);
     },
+
     create(furnitureData, ownerId){
         return Furnuture.create({
             ...furnitureData,
             _ownerId: ownerId,
         });
+    },
+
+    update(furnitureId, furnitureData){
+        return Furnuture.findByIdAndUpdate(furnitureId, furnitureData, {runValidators: true, new: true});
     }
 }
