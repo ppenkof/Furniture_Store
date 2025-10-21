@@ -42,6 +42,8 @@ Furniture Store is JS backEnd application
 -[x] Add funture model
 -[x] Add funture service
 -[x] Create funture ednpoint
+-[x] Get all furniture
+
 
 ## Error handling
 
