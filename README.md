@@ -62,5 +62,5 @@ Furniture Store is JS backEnd application
 
 -[x] Use env variables 'npm i dotenv'
 -[x] Build with vite
--[ ] Refactor Service
+-[x] Refactor Service
 -[ ] Invalidate token

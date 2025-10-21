@@ -1,5 +1,5 @@
 import { Router } from "express";
-import userService from "../service/userService.js";
+import { userService } from "../service/index.js";
 import { get } from "mongoose";
 import { getErrorMessage } from "../utils/errorUtils.js";
 

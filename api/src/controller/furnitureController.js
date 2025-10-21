@@ -1,5 +1,5 @@
 import { Router } from "express";
-import furnitureService from "../service/furnitureService.js";
+import {furnitureService} from "../service/index.js";
 import querystring from "querystring";
 import { getErrorMessage } from "../utils/errorUtils.js";
 
@@ -55,7 +55,7 @@ furnitureController.delete('/:furnitureId', async (req, res) => {
     const userId = req.user.id;
     
     try {
-        const deletedFurniture = await furnitureService.delete(furnitureId, userId);
+        const deletedFurniture = await furnitureService.deleteFurniture(furnitureId, userId);
         res.json(deletedFurniture); 
     } catch (error) {
         //Error handling
