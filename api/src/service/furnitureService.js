@@ -22,5 +22,9 @@ export default {
 
     update(furnitureId, furnitureData){
         return Furnuture.findByIdAndUpdate(furnitureId, furnitureData, {runValidators: true, new: true});
+    },
+
+    delete(furnitureId){
+        return Furnuture.findByIdAndDelete(furnitureId);
     }
 }
