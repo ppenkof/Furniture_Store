@@ -51,8 +51,6 @@ Furniture Store is JS backEnd application
 
 
 
-
-
 ## Error handling
 
 
