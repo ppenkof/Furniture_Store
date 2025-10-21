@@ -1,15 +1,20 @@
 import { Router } from "express";
 import userService from "../service/userService.js";
+import { get } from "mongoose";
 
 const userController = Router();
 
 userController.post('/register', async (req, res) => {
     const { email, password } = req.body;
-    console.log(email);
-    console.log(password);
-    const result = await userService.register(email, password);
-    // Todo: Return data for login
-    res.status(201).json(result);
+   try {
+        const result = await userService.register(email, password);
+        // Todo: Return data for login
+        res.status(201).json(result);
+   } catch (error) {
+        //Extract error message
+        res.status(400).json({ message: getErrorMessage(error) });
+   }
+    
 });
 
 userController.post('/login', async (req, res) => {
