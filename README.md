@@ -54,7 +54,7 @@ Furniture Store is JS backEnd application
 ## Error handling
 
 -[x] Create error util for message
--[ ] Global error handler
+-[x] Global error handler
 
 
 
