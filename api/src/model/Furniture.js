@@ -1,4 +1,4 @@
-import { Schema, model} from 'mongoose';
+import { Schema, model, Types} from 'mongoose';
 
 const furnitureSchema = new Schema({
     make: { 
@@ -35,10 +35,10 @@ const furnitureSchema = new Schema({
         type: String,
         required: false 
     },
-    // ownerId: { 
-    //     type: Scheme.Types.ObjectId, 
-    //     ref: 'User', required: true 
-    // }
+    _ownerId: { 
+        type: Types.ObjectId, 
+        ref: 'User',
+    }
 });
 
 const Furnuture = model('Furniture', furnitureSchema);
